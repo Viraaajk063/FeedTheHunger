@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #d1f4ff;
+}
+.header {
+  position: sticky;
+  top: 0%;
+}
+.head_start {
+  height: 5px;
+  width: 100%;
+  opacity: 100%;
+}
+.navbar {
+  display: flex;
+  max-height: 9vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em;
+  cursor: pointer;
+}
+.navbar_background {
+  background-color: #b7ebfa;
+  border-radius: 2em;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.background {
+  background-color: #d1f4ff;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+.logo {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+}
+.logo img {
+  width: 4em;
+  border-radius: 2em;
+}
+.rightnav {
+  width: 60%;
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navlist li {
+  list-style: none;
+  padding: 1% 7%;
+}
+.navbar li a,
+.navbar li p {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.navbar li p {
+  font-size: 85%;
+}
+.navbar li a:hover {
+  color: rgb(162, 154, 154);
+  transition: all 0.5s ease;
+}
+.burger,
+.Close {
+  display: none;
+}
+.resp_rightnav {
+  display: none;
+}
+.firstsection {
+  padding: 10% 3% 4%;
+  display: flex;
+  justify-content: center;
+}
+.quote {
+  width: 40%;
+}
+.quote p {
+  justify-content: left;
+  font-size: 4em;
+  font-family: "Oswald", sans-serif;
+}
+.locatehide,
+.alerthide,
+.messagehide {
+  display: none;
+}
+.bgimg {
+  width: 60%;
+}
+.bgimg img {
+  height: 100%;
+  width: 91%;
+  padding-top: 4%;
+  display: block;
+  justify-content: right;
+  margin-left: auto;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 2% 6%;
+  margin: 9% 7%;
+  border: 0.2em solid rgb(169 159 159);
+  border-radius: 2em;
+  font-size: 100%;
+  background: #b7ebfa;
+  color: black;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  color: rgb(162, 154, 154);
+}
+.secondsection {
+  padding: 5% 3% 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about h3,
+.log h3,
+.profile h3,
+.donate h3,
+.request h3 {
+  justify-content: center;
+  text-align: center;
+  font-size: 3em;
+  color: #0a5252;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0 0 4%;
+}
+
+.about {
+  width: 100%;
+}
+.about p {
+  justify-content: center;
+  text-align: left;
+  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #4c797a;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 0;
+}
+.set {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  height: 210px;
+  width: 28%;
+  margin: 0 2%;
+  border: 3px solid #718780;
+  border-radius: 36px;
+}
+.thirdsection {
+  padding: 5% 3% 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formbox {
+  width: 380px;
+  height: 540px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+form p {
+  margin-top: 2px;
+  background-color: transparent;
+}
+.buttonbox {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 00 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+#bttn,
+#bn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: turquoise;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.togglebtn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+.input {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+  background-color: transparent;
+}
+.top {
+  top: 90px;
+}
+.dtop {
+  top: 30px;
+}
+abbr {
+  font-weight: bold;
+  text-decoration: underline;
+  color: blue;
+  background: transparent;
+}
+.field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: 0 0 1px 0;
+  border-color: #999;
+  outline: none;
+  background: transparent;
+}
+.v_field {
+  padding: 0%;
+  background: transparent;
+}
+.approve {
+  margin: 0% auto;
+}
+.hidebx {
+  display: none;
+}
+.submit {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: turquoise;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+#log_in {
+  left: 50px;
+}
+#register {
+  left: 450px;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  top: -20px;
+  left: -45px;
+  width: 377px;
+  margin: 22px 0;
+}
+.footer {
+  text-align: center;
+  padding: 12px 0;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #88c7d9;
+  color: white;
+}
+.profile,
+.history,
+.request {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  width: 80%;
+
+  border-collapse: collapse;
+  min-width: max-content;
+}
+.history .table {
+  width: 100%;
+}
+.request .table {
+  width: 100%;
+}
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px 12px;
+  border: 3px solid #c3fbf5;
+  font-size: 1.5em;
+}
+.table th {
+  background-color: #a6e7e7;
+  color: #ffffff;
+}
+.scroll {
+  max-height: 400px;
+  overflow: auto;
+}
